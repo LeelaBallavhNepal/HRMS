@@ -1,0 +1,42 @@
+.tabs-row { gap: .5rem; }
+
+/* make left tabs tidy and non-wrapping */
+.nav { white-space: nowrap; overflow: hidden; }
+.nav .nav-link { border-radius: .5rem; }
+
+/* search input & dropdown */
+.tabs-search-wrap { width: min(360px, 60%); }
+.tabs-search .form-control { box-shadow: none; }
+
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  max-height: 60vh;
+  overflow: auto;
+  z-index: 1050;
+}
+
+@media (max-width: 767.98px) {
+  /* On mobile, keep two items visible and give search full width */
+  .tabs-row { flex-wrap: wrap; }
+  .tabs-search-wrap { width: 100%; order: 2; margin-top: .5rem; }
+}
+
+.search-dropdown {
+  position: absolute; /* stays inside the search box container */
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  max-height: 60vh;
+  overflow: auto;
+
+  /* Force it above surrounding containers */
+  z-index: 9999; /* higher than Bootstrap's modals (1050) if needed */
+
+  /* Optional: add border and background for clarity */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: .375rem;
+}

@@ -1,0 +1,615 @@
+<div class="position-absolute w-100 min-height-300 top-0"
+  style="background-image:url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg'); background-position-y:50%;">
+  <span class="mask bg-primary opacity-6"></span>
+</div>
+
+
+
+<!-- MAIN -->
+<div class="main-content position-relative max-height-vh-100 h-100 ">
+  <!-- Top Navbar -->
+  <nav
+    class="navbar navbar-main navbar-expand-lg bg-transparent shadow-none position-absolute px-4 w-100 z-index-2 mt-n11">
+    <div class="container-fluid py-1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 ps-2 me-sm-6 me-5">
+          <li class="breadcrumb-item text-sm"><a class="text-white opacity-5" href="javascript:;">HRMS</a></li>
+          <li class="breadcrumb-item text-sm text-white active" aria-current="page">Profile</li>
+        </ol>
+        <h6 class="text-white font-weight-bolder ms-2">Profile</h6>
+      </nav>
+    </div>
+  </nav>
+
+  <!-- Profile Summary -->
+  <div class="card shadow-lg mx-4 card-profile-bottom ">
+
+    <div class="card-body p-3">
+      <div class="row gx-4 align-items-center">
+        <div class="col-auto">
+          <div class="avatar avatar-xl position-relative">
+            <img src="../assets/img/team-1.jpg" alt="profile_image" class="w-100 border-radius-lg shadow-sm"
+              id="empAvatar">
+          </div>
+        </div>
+        <div class="col-auto my-auto">
+          <div class="h-100">
+            <h5 class="mb-1" id="empName">Ananya Sharma</h5>
+            <p class="mb-0 font-weight-bold text-sm" id="empTitle">UI/UX Designer • Design</p>
+            <small class="text-secondary" id="empId">Emp No: EMP-1027</small>
+            <div class="field-note mt-1" id="orgLine">BU: Consumer • Sub-BU: Retail • Dept: Design • Cost Center:
+              CC-101</div>
+          </div>
+        </div>
+<!-- <app-tabs-nav></app-tabs-nav> -->
+        <!-- TABS: scrollable with arrows + new tabs for Qualifications & Family -->
+       
+ <div class="col-lg-12 col-md-12 ms-auto py-2">
+          <div class="nav-wrapper position-relative end-0">
+            <div class="d-flex align-items-center tabs-scroll">
+              <!-- Left scroll -->
+              <button class="btn btn-link px-2 tab-scroll-left mb-0" type="button" aria-label="Scroll left">
+                <i class="ni ni-bold-left"></i>
+              </button>
+
+              <!-- Scrollable area -->
+              <div class="flex-grow-1 overflow-auto nav-scroller">
+                <ul class="nav nav-pills nav-fill p-1 justify-content-start flex-nowrap" role="tablist"
+                  style="white-space:nowrap;min-height:42px;">
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 active d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-overview" role="tab">
+                      <i class="ni ni-badge"></i><span class="ms-2">Overview</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-career" role="tab">
+                      <i class="ni ni-briefcase-24"></i><span class="ms-2">Career Journey</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-languages" role="tab">
+                      <i class="ni ni-world"></i><span class="ms-2">Languages</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-passions" role="tab">
+                      <i class="ni ni-favourite-28"></i><span class="ms-2">Passions</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-docs" role="tab">
+                      <i class="ni ni-folder-17"></i><span class="ms-2">Documents</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-skills" role="tab">
+                      <i class="ni ni-hat-3"></i><span class="ms-2">Skills</span>
+                    </a>
+                  </li>
+                  <!-- NEW: Qualifications -->
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-qualifications" role="tab">
+                      <i class="ni ni-paper-diploma"></i><span class="ms-2">Qualifications</span>
+                    </a>
+                  </li>
+                  <!-- NEW: Family -->
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-family" role="tab">
+                      <i class="ni ni-circle-08"></i><span class="ms-2">Family</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center" data-bs-toggle="tab"
+                      href="#tab-memberships" role="tab">
+                      <i class="ni ni-badge"></i><span class="ms-2">Memberships</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Right scroll -->
+              <button class="btn btn-link px-2 tab-scroll-right mb-0" type="button" aria-label="Scroll right">
+                <i class="ni ni-bold-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid py-4">
+    <div class="tab-content">
+      <!-- OVERVIEW -->
+      <div class="tab-pane fade show active" id="tab-overview">
+        <div class="row">
+          <!-- LEFT column -->
+          <div class="col-md-8">
+            <!-- Contact -->
+            <div class="card mb-1">
+              <div class="card-header pb-0">
+                <div class="d-flex align-items-center">
+                  <p class="mb-0">Edit Profile</p>
+                  <button class="btn btn-primary btn-sm ms-auto"><i class="ni ni-edit"></i> Edit</button>
+
+                </div>
+              </div>
+
+              <div class="card-body">
+
+                <p class="mb-0">PERSONAL</p>
+                <span class="field-note"><span class="badge bg-secondary lock-badge"><i
+                      class="ni ni-lock-circle-open me-1"></i>Private</span> Date of Birth is not visible to other
+                  employees.</span>
+                <div class="row pt-3 g-3">
+                  <div class="col-md-3">
+                    <label class="form-control-label">DOB</label>
+                    <input class="form-control readonly" type="date" id="empDob" value="1996-04-21" disabled>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-control-label">Gender</label>
+                    <input class="form-control readonly" type="text" id="empGender" value="Female" disabled>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-control-label">Mother Tongue</label>
+                    <input class="form-control readonly" type="text" id="empMotherTongue" value="Nepali" disabled>
+                  </div>
+                  <div class="col-md-12">
+                    <hr style="border-top:0.3px solid #8392ab" />
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="d-flex">
+                  <span>
+                    <p class="mb-0 pt-2">CONTACT INFORMATION</p>
+                <span class="field-note">You can update Mobile No and Office Telephone No directly.</span>
+                  </span>
+                  <button class="btn btn-outline-primary ms-auto" id="btnAddAddress"><i
+                      class="ni ni-fat-add"></i>Add Address</button>
+                </div>
+                
+                <div class="row g-3 mt-2">
+
+                  <div class="col-md-6">
+                    <label class="form-control-label">Email</label>
+                    <input class="form-control readonly" type="email" id="empEmail" value="ananya.sharma@example.com"
+                      disabled>
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-control-label">Mobile No</label>
+                    <input class="form-control" type="text" id="empMobile" value="+91 98765 43210">
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-control-label">Office Telephone No</label>
+                    <input class="form-control" type="text" id="empOfficeTel" value="">
+                  </div>
+                  
+                  <div class="clearfix"></div>
+ 
+                 
+                   <!-- Address template items -->
+                  <div class="addr-card mb-3" data-addr>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <select class="form-control form-control-sm needs-approval addr-type">
+                          <option selected>Current</option>
+                          <option>Permanent</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <span class="badge badge-sm bg-gradient-success me-2">Address</span>
+                      <div class="form-check ms-auto me-3">
+                        <input class="form-check-input emergency-flag" type="checkbox" id="chkEmerg1">
+                        <label class="form-check-label" for="chkEmerg1">Mark as Emergency</label>
+                      </div>
+                      <button class="btn btn-link text-danger p-0 btnDelAddress" title="Remove"><i
+                          class="ni ni-fat-remove"></i></button>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label class="form-control-label">Street</label>
+                        <input class="form-control needs-approval addr-street" value="21 Park Street">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">City</label>
+                        <input class="form-control needs-approval addr-city" value="Kolkata">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">State</label>
+                        <input class="form-control needs-approval addr-state" value="West Bengal">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">Postal Code</label>
+                        <input class="form-control needs-approval addr-zip" value="700071">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="addr-card" data-addr>
+                    <div class="d-flex align-items-center mb-2">
+                      <div class="me-2">
+                        <select class="form-control form-control-sm needs-approval addr-type">
+                          <option>Current</option>
+                          <option selected>Permanent</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <span class="badge badge-sm bg-gradient-success">Address</span>
+                      <div class="form-check ms-auto me-3">
+                        <input class="form-check-input emergency-flag" type="checkbox" id="chkEmerg2">
+                        <label class="form-check-label" for="chkEmerg2">Mark as Emergency</label>
+                      </div>
+                      <button class="btn btn-link text-danger p-0 btnDelAddress" title="Remove"><i
+                          class="ni ni-fat-remove"></i></button>
+                    </div>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label class="form-control-label">Street</label>
+                        <input class="form-control needs-approval addr-street" value="11 Lake View">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">City</label>
+                        <input class="form-control needs-approval addr-city" value="Siliguri">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">State</label>
+                        <input class="form-control needs-approval addr-state" value="West Bengal">
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-control-label">Postal Code</label>
+                        <input class="form-control needs-approval addr-zip" value="734001">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div> 
+              <!-- Save -->
+               <div class="card-footer ">
+<div class=" float-end text-end">
+                <button class="btn btn-primary " id="btnSave"><i class="ni ni-check-bold me-1"></i>Save</button>
+                
+                <p class="field-note ">Some changes require HR approval. You’ll be notified once approved.</p>
+ 
+              </div>
+               </div>
+              
+            </div>
+
+          </div>
+
+          <!-- RIGHT column -->
+          <div class="col-md-4">
+            <!-- Employment -->
+            <div class="card mb-4">
+              <div class="card-header pb-0">
+                <p class="mb-0">Employment</p>
+              </div>
+              <div class="card-body">
+                <div class="row g-3">
+                  <div class="col-6"><label class="form-control-label">Status</label><input
+                      class="form-control readonly" value="Active" disabled></div>
+                  <div class="col-6"><label class="form-control-label">Designation</label><input
+                      class="form-control readonly" value="UI/UX Designer" disabled></div>
+                  <div class="col-6"><label class="form-control-label">Region</label><input
+                      class="form-control readonly" value="East" disabled></div>
+                  <div class="col-6"><label class="form-control-label">Branch / Office</label><input
+                      class="form-control readonly" value="Kolkata" disabled></div>
+                  <div class="col-6"><label class="form-control-label">DOJ</label><input class="form-control readonly"
+                      value="01-Aug-2025" disabled></div>
+                  <div class="col-6"><label class="form-control-label">Sol Id</label><input
+                      class="form-control readonly" value="S-204" disabled></div>
+                  <div class="col-12"><label class="form-control-label">Domain / Finacle / Finone</label><input
+                      class="form-control readonly" value="ananya.s | FIN-88310 | FONE-1142" disabled></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PAN -->
+            <div class="card mb-4">
+              <div class="card-header pb-0">
+                <p class="mb-0">Income Tax PAN</p><span class="field-note">Visible only to you & HR.</span>
+              </div>
+              <div class="card-body"><input class="form-control" id="empPAN" maxlength="10" placeholder="ABCDE1234F"
+                  value="ABCDE1234F"></div>
+            </div>
+
+            <!-- Bank -->
+            <div class="card">
+              <div class="card-header pb-0">
+                <p class="mb-0">Bank Account</p><span class="field-note">Managed by HR/Payroll.</span>
+              </div>
+              <div class="card-body">
+                <div class="row g-3">
+                  <div class="col-8"><label class="form-control-label">Bank</label><input class="form-control readonly"
+                      value="DCB Bank Limited" disabled></div>
+                  <div class="col-4"><label class="form-control-label">A/C Type</label><input
+                      class="form-control readonly" value="Savings" disabled></div>
+                  <div class="col-12"><label class="form-control-label">Account Number</label><input
+                      class="form-control readonly" value="XXXXXX1234" disabled></div>
+                  <div class="col-12"><label class="form-control-label">IFSC</label><input class="form-control readonly"
+                      value="DCBL0000123" disabled></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /row -->
+      </div><!-- /tab-overview -->
+      <!-- QUALIFICATIONS (new tab) -->
+      <div class="tab-pane fade" id="tab-qualifications">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">Qualifications</p>
+            <span class="field-note ms-2">Mention most recent first. Updates go to HR approval.</span>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnAddQual">
+              <i class="ni ni-fat-add me-1"></i>Add
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-sm" id="tblQual">
+                <thead>
+                  <tr>
+                    <th>Qualification</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                    <th>Most Recent</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input class="form-control needs-approval" value="B.Tech (CSE)"></td>
+                    <td><input class="form-control needs-approval" value="ABC University"></td>
+                    <td style="width:120px;"><input class="form-control needs-approval" value="2018"></td>
+                    <td style="width:150px;">
+                      <div class="form-check">
+                        <input class="form-check-input needs-approval" type="checkbox" checked>
+                        <label class="form-check-label">Mark as most recent</label>
+                      </div>
+                    </td>
+                    <td class="text-end" style="width:60px;">
+                      <button class="btn btn-link text-danger p-0 btnDelRow" title="Remove">
+                        <i class="ni ni-fat-remove"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAMILY (new tab) -->
+      <div class="tab-pane fade" id="tab-family">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">Family</p>
+            <span class="field-note ms-2">Father-in-law & Mother-in-law allowed. Brother/Sister default Mediclaim =
+              No. Updates go to HR approval.</span>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnAddFamily">
+              <i class="ni ni-fat-add me-1"></i>Add
+            </button>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-sm" id="tblFamily">
+                <thead>
+                  <tr>
+                    <th>Full Name</th>
+                    <th>Relationship</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Mediclaim</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input class="form-control needs-approval" value="Sunil Sharma"></td>
+                    <td>
+                      <select class="form-control needs-approval rel">
+                        <option>Father</option>
+                        <option>Mother</option>
+                        <option>Spouse</option>
+                        <option>Son</option>
+                        <option>Daughter</option>
+                        <option>Brother</option>
+                        <option>Sister</option>
+                        <option>Father-in-law</option>
+                        <option>Mother-in-law</option>
+                      </select>
+                    </td>
+                    <td><input type="date" class="form-control needs-approval" value="1970-06-20"></td>
+                    <td>
+                      <select class="form-control needs-approval">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                      </select>
+                    </td>
+                    <td class="text-center">
+                      <input type="checkbox" class="form-check-input needs-approval mediclaim" checked>
+                    </td>
+                    <td class="text-end">
+                      <button class="btn btn-link text-danger p-0 btnDelRow" title="Remove">
+                        <i class="ni ni-fat-remove"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAREER JOURNEY -->
+      <div class="tab-pane fade" id="tab-career">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">My Career Journey</p>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnAddCareer"><i
+                class="ni ni-fat-add me-1"></i>Add</button>
+          </div>
+          <div class="card-body">
+            <div class="timeline" id="careerTimeline">
+              <div class="t-item" data-career>
+                <span class="t-dot"></span>
+                <div><strong>UI/UX Designer</strong> • DCB Bank • <span class="text-secondary">Aug 2025 –
+                    Present</span></div>
+                <div class="field-note">Design System, Mobile App Revamp</div>
+                <button class="btn btn-link text-danger p-0 btnDelCareer">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="tab-pane fade" id="tab-languages">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">Languages</p>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnAddLanguage"><i
+                class="ni ni-fat-add me-1"></i>Add</button>
+          </div>
+          <div class="card-body">
+            <div id="langList">
+              <div class="row g-2 align-items-center mb-2" data-lang>
+                <div class="col-md-4"><input class="form-control" placeholder="Language" value="English"></div>
+                <div class="col-md-4">
+                  <select class="form-control">
+                    <option selected>Fluent</option>
+                    <option>Professional</option>
+                    <option>Conversational</option>
+                    <option>Basic</option>
+                  </select>
+                </div>
+                <div class="col-md-3"><input class="form-control" placeholder="Cert/Notes"></div>
+                <div class="col-md-1 text-end"><button class="btn btn-link text-danger p-0 btnDelLang"><i
+                      class="ni ni-fat-remove"></i></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PASSIONS -->
+      <div class="tab-pane fade" id="tab-passions">
+        <div class="card">
+          <div class="card-header pb-0">
+            <p class="mb-0">My Passions</p>
+            <span class="field-note">Add things you love doing.</span>
+          </div>
+          <div class="card-body">
+            <div class="mb-2" id="passionChips">
+              <span class="chip">Photography<span class="x">&times;</span></span>
+              <span class="chip">Trekking<span class="x">&times;</span></span>
+            </div>
+            <div class="d-flex gap-2">
+              <input class="form-control" id="passionInput" placeholder="Add a passion...">
+              <button class="btn btn-dark" id="btnAddPassion">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOCUMENTS -->
+      <div class="tab-pane fade" id="tab-docs">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">My Documents</p>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnUploadDoc"><i
+                class="ni ni-cloud-upload-96 me-1"></i>Upload</button>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-sm align-items-center">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Updated</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="docTableBody">
+                  <tr>
+                    <td>Offer Letter.pdf</td>
+                    <td>Onboarding</td>
+                    <td>01 Aug 2025</td>
+                    <td class="text-center"><a href="#">Download</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <small class="field-note">Accepted: PDF/JPG/PNG up to 5MB.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="tab-pane fade" id="tab-skills">
+        <div class="card">
+          <div class="card-header pb-0">
+            <p class="mb-0">My Skillsets</p>
+            <span class="field-note">Add skills and proficiency.</span>
+          </div>
+          <div class="card-body">
+            <div class="mb-2" id="skillChips">
+              <span class="chip">Figma<span class="x">&times;</span></span>
+              <span class="chip">HTML/CSS<span class="x">&times;</span></span>
+            </div>
+            <div class="row g-2">
+              <div class="col-md-5"><input class="form-control" id="skillInput" placeholder="Add a skill..."></div>
+              <div class="col-md-4">
+                <select class="form-control" id="skillLevel">
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option selected>Advanced</option>
+                  <option>Expert</option>
+                </select>
+              </div>
+              <div class="col-md-3 d-grid"><button class="btn btn-dark" id="btnAddSkill">Add Skill</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEMBERSHIPS -->
+      <div class="tab-pane fade" id="tab-memberships">
+        <div class="card">
+          <div class="card-header pb-0 d-flex align-items-center">
+            <p class="mb-0">Memberships</p>
+            <button class="btn btn-sm btn-outline-dark ms-auto" id="btnAddMembership"><i
+                class="ni ni-fat-add me-1"></i>Add</button>
+          </div>
+          <div class="card-body" id="memberList">
+            <div class="row g-2 align-items-center mb-2" data-member>
+              <div class="col-md-5"><input class="form-control" value="Interaction Design Foundation"></div>
+              <div class="col-md-4"><input class="form-control" placeholder="Member ID / Notes" value="IDF-12345">
+              </div>
+              <div class="col-md-2"><input class="form-control" placeholder="Since" value="2023"></div>
+              <div class="col-md-1 text-end"><button class="btn btn-link text-danger p-0 btnDelMember"><i
+                    class="ni ni-fat-remove"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tab-content -->
+  </div><!-- /container-fluid -->
+
+
+</div><!-- /main-content -->

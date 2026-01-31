@@ -1,0 +1,80 @@
+.icon.icon-shape { width: 36px; height: 36px; }
+.main-content {     margin-left: 17.125rem; }
+
+ .field-note {
+      font-size: .75rem;
+      color: #8392AB;
+    }
+
+    .lock-badge {
+      font-size: .75rem;
+    }
+
+    .readonly {
+      background: #f8f9fa;
+    }
+
+    .req {
+      color: #e11d48;
+      margin-left: 2px;
+    }
+
+    .table-sm td,
+    .table-sm th {
+      padding: .35rem .5rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: .25rem .5rem;
+      border-radius: 999px;
+      background: #edf2f7;
+      margin: .15rem .25rem;
+    }
+
+    .chip .x {
+      margin-left: .4rem;
+      cursor: pointer;
+    }
+
+    .addr-card {
+      border: 1px solid #e9ecef;
+      border-radius: .75rem;
+      padding: 1rem;
+    }
+
+    .addr-badge {
+      font-size: .7rem;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 1rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #e9ecef;
+    }
+
+    .t-item {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .t-dot {
+      position: absolute;
+      left: 0;
+      top: .35rem;
+      width: .75rem;
+      height: .75rem;
+      border-radius: 50%;
+      background: #5e72e4;
+    }

@@ -1,0 +1,43 @@
+<div class="tabs-row d-flex align-items-center pt-3">
+  <!-- LEFT: 2–3 inline tabs -->
+  <ul class="nav nav-pills p-0 m-0 flex-nowrap">
+    <li class="nav-item" *ngFor="let t of leftItems">
+      <a class="nav-link mb-0 px-3 py-1 d-inline-flex align-items-center"
+         data-bs-toggle="tab" [attr.href]="t.href" role="tab">
+        <i class="{{t.icon}}"></i>
+        <span class="ms-2">{{ t.label }}</span>
+      </a>
+    </li>
+  </ul>
+
+  <!-- RIGHT: search box (same row) -->
+  <div class="ms-auto position-relative tabs-search-wrap">
+    <div class="input-group input-group-sm tabs-search">
+      <span class="input-group-text bg-white border-end-0">
+       <i class="ni ni-zoom-split-in search-icon"></i>
+      </span>
+      <input type="text"
+             class="form-control border-start-0"
+             placeholder="Search sections…"
+             [(ngModel)]="searchTerm"
+             (focus)="openDropdown()"
+             (blur)="closeDropdownSoon()"/>
+    </div>
+
+    <!-- Search dropdown -->
+    <div class="search-dropdown card shadow-sm"
+         *ngIf="dropdownOpen">
+      <div class="list-group list-group-flush">
+        <a *ngFor="let i of filtered"
+           class="list-group-item list-group-item-action d-flex align-items-center"
+           [attr.href]="i.href"
+           data-bs-toggle="tab"
+           (mousedown)="$event.preventDefault()"
+           (click)="selectItem(i)">
+          <i class="{{i.icon}} me-2"></i>
+          <span>{{ i.label }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

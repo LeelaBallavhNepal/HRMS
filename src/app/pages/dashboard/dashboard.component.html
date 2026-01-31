@@ -1,0 +1,384 @@
+   <div class="min-height-300 bg-dark position-absolute w-100"></div>
+  <!-- MAIN -->
+  <main class="main-content position-relative border-radius-lg">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-white" href="javascript:;">HRMS</a></li>
+            <li class="breadcrumb-item text-sm text-white active" aria-current="page">Dashboard</li>
+          </ol>
+          <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
+        </nav>
+
+        <div class="collapse navbar-collapse mt-sm-0 mt-2" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group">
+              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Search employee, ID, dept...">
+            </div>
+          </div>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item d-flex align-items-center">
+              <a href="../pages/sign-in.html" class="nav-link text-white font-weight-bold px-0">
+                <i class="fa fa-user me-sm-1"></i>
+                <span class="d-sm-inline d-none">Sign In</span>
+              </a>
+            </li>
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line bg-white"></i>
+                  <i class="sidenav-toggler-line bg-white"></i>
+                  <i class="sidenav-toggler-line bg-white"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item px-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0"><i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i></a>
+            </li>
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-white p-0" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                <i class="fa fa-bell cursor-pointer"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton" id="notifList">
+                <!-- TODO: Inject HR notifications -->
+                <li class="mb-2">
+                  <div class="dropdown-item border-radius-md">
+                    <div class="d-flex py-1">
+                      <div class="avatar avatar-sm bg-gradient-secondary me-3 my-auto d-flex align-items-center justify-content-center">
+                        <i class="ni ni-notification-70 text-white"></i>
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1"><span class="font-weight-bold">Reminder:</span> Pending leave approvals</h6>
+                        <p class="text-xs text-secondary mb-0"><i class="fa fa-clock me-1"></i> 10 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="container-fluid py-4">
+      <!-- KPI ROW -->
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Total Employees</p>
+                  <h5 class="font-weight-bolder" id="kpiTotalEmployees">328</h5>
+                  <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+4%</span> vs last month</p>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
+                    <i class="ni ni-single-02 text-lg opacity-10"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Present Today</p>
+                  <h5 class="font-weight-bolder" id="kpiPresentToday">302</h5>
+                  <p class="mb-0"><span class="text-success text-sm font-weight-bolder">92%</span> attendance</p>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-success shadow-success text-center rounded-circle">
+                    <i class="ni ni-check-bold text-lg opacity-10"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Pending Leaves</p>
+                  <h5 class="font-weight-bolder" id="kpiPendingLeaves">12</h5>
+                  <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">+3</span> since yesterday</p>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-warning shadow-warning text-center rounded-circle">
+                    <i class="ni ni-time-alarm text-lg opacity-10"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6">
+          <div class="card">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-sm mb-0 text-uppercase font-weight-bold">Open Positions</p>
+                  <h5 class="font-weight-bolder" id="kpiOpenPositions">7</h5>
+                  <p class="mb-0"><span class="text-success text-sm font-weight-bolder">3 new</span> this week</p>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="icon icon-shape bg-gradient-info shadow-info text-center rounded-circle">
+                    <i class="ni ni-badge text-lg opacity-10"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHART + ANNOUNCEMENTS -->
+      <div class="row mt-4">
+        <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="card z-index-2 h-100">
+            <div class="card-header pb-0 pt-3 bg-transparent">
+              <h6 class="text-capitalize">Attendance Trend (Last 9 Months)</h6>
+              <p class="text-sm mb-0"><i class="fa fa-arrow-up text-success"></i> <span class="font-weight-bold">Steady</span> improvement</p>
+            </div>
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas #attCanvas id="chart-attendance" height="300"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card card-carousel overflow-hidden h-100 p-0">
+            <div id="hrCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+              <div class="carousel-inner border-radius-lg h-100">
+                <div class="carousel-item h-100 active" style="background-image: url('../assets/img/carousel-1.jpg'); background-size: cover;">
+                  <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                    <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                      <i class="ni ni-satisfied text-dark opacity-10"></i>
+                    </div>
+                    <h5 class="text-white mb-1">Announcement</h5>
+                    <p id="announce1">Salary disbursement on 30th; submit expenses by 25th.</p>
+                  </div>
+                </div>
+                <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-2.jpg'); background-size: cover;">
+                  <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                    <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                      <i class="ni ni-bulb-61 text-dark opacity-10"></i>
+                    </div>
+                    <h5 class="text-white mb-1">Policy Update</h5>
+                    <p id="announce2">Hybrid work policy updated; 2 days/week optional WFH.</p>
+                  </div>
+                </div>
+                <div class="carousel-item h-100" style="background-image: url('../assets/img/carousel-3.jpg'); background-size: cover;">
+                  <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
+                    <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
+                      <i class="ni ni-trophy text-dark opacity-10"></i>
+                    </div>
+                    <h5 class="text-white mb-1">Kudos</h5>
+                    <p id="announce3">Kudos to Engineering for 99.9% SLA in July!</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev w-5 me-3" type="button" data-bs-target="#hrCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next w-5 me-3" type="button" data-bs-target="#hrCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABLE + QUICK ACTIONS -->
+      <div class="row mt-4">
+        <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="card">
+            <div class="card-header pb-0 p-3 d-flex justify-content-between align-items-center">
+              <h6 class="mb-0">Recent Hires</h6>
+              <a href="./employees.html" class="text-sm">View all</a>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employee</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Department</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">DOJ</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="recentHiresBody">
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1 align-items-center">
+                        <div><img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="emp"></div>
+                        <div class="d-flex flex-column">
+                          <h6 class="mb-0 text-sm">Ananya Sharma</h6>
+                          <p class="text-xs text-secondary mb-0">UI/UX Designer</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="text-sm mb-0">Design</p></td>
+                    <td class="align-middle text-center"><span class="text-secondary text-xs">01 Aug 2025</span></td>
+                    <td class="align-middle text-center"><span class="badge bg-gradient-success">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1 align-items-center">
+                        <div><img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="emp"></div>
+                        <div class="d-flex flex-column">
+                          <h6 class="mb-0 text-sm">Rohit Verma</h6>
+                          <p class="text-xs text-secondary mb-0">Backend Engineer</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="text-sm mb-0">Engineering</p></td>
+                    <td class="align-middle text-center"><span class="text-secondary text-xs">25 Jul 2025</span></td>
+                    <td class="align-middle text-center"><span class="badge bg-gradient-warning">Probation</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1 align-items-center">
+                        <div><img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="emp"></div>
+                        <div class="d-flex flex-column">
+                          <h6 class="mb-0 text-sm">Priya Das</h6>
+                          <p class="text-xs text-secondary mb-0">HR Executive</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="text-sm mb-0">Human Resources</p></td>
+                    <td class="align-middle text-center"><span class="text-secondary text-xs">18 Jul 2025</span></td>
+                    <td class="align-middle text-center"><span class="badge bg-gradient-info">Onboarding</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-header pb-0 p-3">
+              <h6 class="mb-0">Quick Actions</h6>
+            </div>
+            <div class="card-body p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-fat-add text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Add Employee</h6>
+                      <span class="text-xs">Create a new employee record</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <a href="./employees-new.html" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark my-auto">
+                      <i class="ni ni-bold-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-calendar-grid-58 text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Approve Leaves</h6>
+                      <span class="text-xs">Review pending leave requests</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <a href="./leaves.html" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark my-auto">
+                      <i class="ni ni-bold-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-credit-card text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Run Payroll</h6>
+                      <span class="text-xs">Prepare monthly payroll</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <a href="./payroll.html" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark my-auto">
+                      <i class="ni ni-bold-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg align-items-center">
+                  <div class="d-flex align-items-center">
+                    <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
+                      <i class="ni ni-badge text-white opacity-10"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h6 class="mb-1 text-dark text-sm">Post Job</h6>
+                      <span class="text-xs">Create a new job opening</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <a href="./recruitment.html" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark my-auto">
+                      <i class="ni ni-bold-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+
+              <hr class="my-3">
+              <div class="px-2">
+                <p class="text-sm text-secondary mb-1">Payroll Progress</p>
+                <div class="progress">
+                  <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" id="payrollProgress">68%</div>
+                </div>
+                <small class="text-xs text-secondary">Cut-off: 25th of each month</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer pt-3">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="text-center text-sm text-muted text-lg-start">
+                © <script>document.write(new Date().getFullYear())</script> • HRMS Dashboard
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted">Docs</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted">Support</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link text-muted pe-0">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
